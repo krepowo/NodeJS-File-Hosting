@@ -15,3 +15,6 @@ Create a POST request with files to `/post`, example: `http://example.com?passwo
 
 ### ShareX setup
 ![usage](https://cdn.krepowo.tk/57DW83FZqI.png)
+
+
+ᵇᵃᵈ ᵃᵗ ᵐᵃᵏᶦⁿᵍ ʳᵉᵃᵈᵐᵉ
