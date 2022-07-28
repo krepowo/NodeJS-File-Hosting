@@ -1,7 +1,7 @@
-# NodeJS-File-Hosting
+### NodeJS-File-Hosting
 Aiming for ShareX image/file servers
 
-# Install
+### Install
 ```bash
 git clone gh repo clone krepowo/NodeJS-File-Hosting
 cd NodeJS-File-Hosting
@@ -10,8 +10,8 @@ npm install
 node index.js
 ```
 
-# Usage
+### Usage
 Create a POST request with files to `/post`, example: `http://example.com?password=yourPassword`
 
-
+### ShareX setup
 ![usage](https://cdn.krepowo.tk/57DW83FZqI.png)
