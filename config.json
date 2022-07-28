@@ -1,0 +1,5 @@
+{
+    "password": "yourPassword",
+    "domain": "your domain, example: http://cdn.krepowo.tk",
+    "port": 3000
+}
