@@ -3,6 +3,7 @@ var express = require('express'),
     fs = require('fs'),
     busboy = require('connect-busboy'),
     config = require('./config.json'),
+
     app = express(),
 
     dir = path.join(__dirname, 'public'),
@@ -15,18 +16,28 @@ app.use('/', express.static(dir));
 
 app.use(busboy());
 
+app.get("/", (req, res) => {
+    res.send("server is works!")
+});
+
 app.post("/post", (req, res) => {
     let pass = req.query.password;
-    if (pass !== password) return res.status(403).end()
+    if (!pass) return res.status(403).end();
+    if (pass !== password) return res.status(403).end();
 
     var fstream;
     req.pipe(req.busboy);
+
     req.busboy.on('file', (fieldname, file, filename) => {
-        console.log("Uploading: " + filename.filename + "\nFrom: " + req.ip);
-        fstream = fs.createWriteStream(`${process.cwd()}/public/${filename.filename}`);
+
+        let namefile = filename.filename.replace(/ /g, "_");
+
+        console.log("Uploading: " + namefile + "\nFrom: " + req.ip);
+        fstream = fs.createWriteStream(`${process.cwd()}/public/${namefile}`);
         file.pipe(fstream);
+
         fstream.on('finish', () => {
-            res.status(200).send(`${domain}/${filename.filename}`)
+            res.status(200).send(`${domain}/${namefile}`)
         })
     })
 });
