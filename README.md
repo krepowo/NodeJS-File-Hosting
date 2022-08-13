@@ -3,7 +3,7 @@ Aiming for ShareX image/file servers
 
 ### Install
 ```bash
-git clone gh repo clone krepowo/NodeJS-File-Hosting
+git clone https://github.com/krepowo/NodeJS-File-Hosting
 cd NodeJS-File-Hosting
 # edit config.json
 npm install
