@@ -14,7 +14,7 @@ node index.js
 Create a POST request with files to `/post`, example: `http://example.com/post?password=yourPassword`
 
 ### ShareX setup
-![usage](https://cdn.krepowo.tk/57DW83FZqI.png)
+soon
 
 ### Demo
 https://cdn.owohunt.ga
