@@ -17,8 +17,8 @@ Create a POST request with files to `/post`, example: `http://example.com/post?p
 ![usage](https://cdn.krepowo.tk/57DW83FZqI.png)
 
 ### Demo
-https://cdn.krepowo.tk
+https://cdn.owohunt.ga
 
-https://cdn.krepowo.tk/test-image.png
+https://cdn.owohunt.ga/test-image.png
 
 ᵇᵃᵈ ᵃᵗ ᵐᵃᵏᶦⁿᵍ ʳᵉᵃᵈᵐᵉ
